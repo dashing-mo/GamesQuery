@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--设置背景色-->
+    <solid android:color="@color/edit_find_background" />
+    <gradient
+        android:endColor="#D32F2F"
+        android:gradientRadius="700"
+        android:startColor="#F44336"
+        android:type="radial"
+        android:useLevel="false" />
+
+</shape>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--默认，没选中的图片，必须放在第一行才会起作用-->
+    <item android:color="@color/text_selected" android:state_checked="true"/>
+    <item android:color="@color/text_normal"/>
+
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--默认，没选中的图片，必须放在第一行才会起作用-->
+    <item android:drawable="@drawable/night_24dp" android:state_checked="true" />
+    <item android:drawable="@drawable/day_24dp" />
+
+</selector>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="LightPink1">#FFAEB9</color>
+    <color name="Honeydew2">#E0EEE0</color>
+    <color name="LIGHT_PRIMARY_COLOR">#F5F5F5</color>
+    <color name="TEXT_ICONS">#212121</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="text_normal">#515151</color>
+    <color name="text_selected">#d81e06</color>
+    <color name="lightGrey">#D3D3D3</color>
+    <color name="edit_find_background">#F5F5F5</color>
+    <color name="edit_find_text">#BEBEBE</color>
+    <color name="settings_text">#616161</color>
+    <color name="settings_option_text">#f06292</color>
+</resources>

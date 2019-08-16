@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">游讯阁</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">Hello World , Hello Game</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="launch_text">一款“未完成”的\n游戏资讯聚合软件</string>
+
+    <string name="menu_home">回到首页</string>
+    <string name="menu_game">游戏推荐</string>
+    <string name="menu_recognizes">游戏识别</string>
+    <string name="menu_platform">平台</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_night">夜间模式</string>
+
+    <string name="tab_menu_news">新闻资讯</string>
+    <string name="tab_menu_library">游戏库</string>
+    <string name="tab_menu_raiders">查价格</string>
+    <string name="tab_menu_personal">我的</string>
+
+    <string name="youmin">游民星空</string>
+    <string name="jihe">机核网</string>
+    <string name="SteamCN">SteamCN</string>
+    <string name="shiguang">游戏时光</string>
+    <string name="baidu">百度百科</string>
+    <string name="sanDM">3DM网站</string>
+    <string name="youxia">游侠网站</string>
+    <string name="sinaapp">整合查询</string>
+    <string name="steamdb">SteamDB</string>
+
+
+    <string name="et_find_hint">请输入游戏名</string>
+    <string name="btn_findgame_text">搜索</string>
+    <string name="et_price_find">只能输入游戏英文名</string>
+    <string name="et_find">请输入游戏名</string>
+
+    <string name="btn_like">喜欢</string>
+    <string name="btn_dislike">不喜欢</string>
+    <string name="btn_Online_game">网络游戏</string>
+    <string name="btn_Stand_alone_game">单机游戏</string>
+    <string name="btn_Yes">有</string>
+    <string name="btn_No">没有</string>
+    <string name="btn_Two_dimensional_game">2D游戏</string>
+    <string name="btn_Three_dimensional_game">3D游戏</string>
+    <string name="Combat">战斗</string>
+    <string name="simulation">养成模拟</string>
+
+    <string name="like_game">你喜欢游戏吗？</string>
+    <string name="daily_preference">日常游玩偏向网络游戏还是单机游戏？</string>
+    <string name="Three_dimensional_vertigo">你有3D眩晕症吗？</string>
+    <string name="Two_dimensional_game">你喜欢玩2D游戏吗？</string>
+    <string name="Two_Three">你喜欢2D还是3D游戏？</string>
+    <string name="Combat_simulation">比较偏向于战斗还是养成模拟？</string>
+
+    <string name="main_annotate">目前此功能仅为创意性测试DEMO阶段\n以下问题极具主观色彩\n仅提供一个兴趣方向而已\n不足之处见谅</string>
+
+    <string name="peice_annotate">此为Steam商品价格查询\n用于筛选一款游戏的历史最低价格</string>
+    <string name="update_text">发现新版本</string>
+    <string name="jibenshezhi">基本设置</string>
+    <string name="xianshizhuangtailan">显示状态栏</string>
+    <string name="zhuangtai_shuoming">在应用顶部显示系统状态栏</string>
+    <string name="qingchuhuancun">清除缓存</string>
+    <string name="qingchu_shuoming">清除程序在运行时产生的临时数据</string>
+    <string name="qita">其它</string>
+    <string name="guanyu">关于</string>
+    <string name="error_logo">┭┮﹏┭┮</string>
+    <string name="error_btn">点击刷新</string>
+    <string name="error_text">网                 大\n络                 侠\n连                 请\n接                 重\n失                 新\n败                 来\n了                 过</string>
+    <string name="youmin_title">游民星空</string>
+    <string name="jihe_title">机核网</string>
+    <string name="shiguang_title">游戏时光</string>
+    <string name="putao_title">游戏葡萄</string>
+    <string name="dm_title">3DM论坛</string>
+    <string name="youxia_title">游侠网</string>
+    <string name="jimi_title">叽咪叽咪</string>
+
+    <string name="youmin_explain">目前国内最大的游戏资讯媒体</string>
+    <string name="jihe_explain">深入探讨游戏文化的游戏媒体平台</string>
+    <string name="shiguang_explain">专业有趣的游戏媒体平台</string>
+    <string name="putao_explain">有判断、有前瞻的游戏行业内容平台</string>
+    <string name="dm_explain">有情怀的爱心资源下载论坛</string>
+    <string name="youxia_explain">著名的爱心资源下载网站</string>
+    <string name="jimi_explain">交互概念精致的有爱游戏社区</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--获得焦点，单击时候的图片,必须放在第一行才会起作用-->
+    <item android:drawable="@drawable/news_down" android:state_pressed="true" />
+    <!--默认，没选中的图片-->
+    <item android:drawable="@drawable/news_up" android:state_selected="false" />
+
+    <!--选中时的图片-->
+    <item android:drawable="@drawable/news_down" android:state_selected="true" />
+</selector>

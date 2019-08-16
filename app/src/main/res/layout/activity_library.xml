@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.google.android.material.appbar.AppBarLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<androidx.appcompat.widget.Toolbar-->
+    <!--android:id="@+id/tl_reload"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:background="@color/bg_white"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--app:layout_scrollFlags="scroll|enterAlways"-->
+    <!--app:navigationIcon="@mipmap/ic_keyboard_backspace_black_24dp"-->
+    <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+    <!--app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+    <!--</com.google.android.material.appbar.AppBarLayout>-->
+
+    <!--<androidx.core.widget.NestedScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar"
+        android:orientation="horizontal">
+
+        <com.example.gamesquery.EditTextWithDel
+            android:id="@+id/et_find_library"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="8"
+            android:background="@drawable/search_find_activity"
+            android:hint="@string/et_find"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/edit_find_text"
+            android:textCursorDrawable="@null"
+            android:textSize="13sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_find_library"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/search"
+            android:visibility="visible" />
+        <!--android:layout_weight="0.7"-->
+        <TextView
+            android:id="@+id/tv_find_library"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="10dp"
+            android:text="取消"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_library"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividing_line"
+        android:layout_below="@id/ll"
+        android:background="@color/lightGrey" />
+
+    <ProgressBar
+        android:id="@+id/pb_load_library"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/iv_library"
+        android:visibility="gone" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srl_library"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pb_load_library"
+        android:orientation="vertical">
+
+        <!--<com.example.gamesquery.MyWebView-->
+        <!--android:id="@+id/wv_library"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom" />-->
+
+        <FrameLayout
+            android:id="@+id/wv_library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/LIGHT_PRIMARY_COLOR"
+        android:backgroundTintMode="src_atop"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/arrow_up"
+        tools:ignore="VectorDrawableCompat" />
+    <!--layout_anchor:设置FAB的锚点，即以哪个控件为参照点设置位置
+    app:layout_anchorGravity - 设置FAB相对锚点的位置，值有 bottom、center、right、left、top等。
+    -->
+    <!--<com.tencent.smtt.sdk.WebView-->
+    <!--android:id="@+id/wv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</com.tencent.smtt.sdk.WebView>-->
+
+    <LinearLayout
+        android:id="@+id/ll_error_library"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pb_load_library"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/error_logo"
+            android:textColor="@color/text_selected"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_logo"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/error_text"
+            android:textColor="@color/TEXT_ICONS"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_error_library"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/error_btn_background"
+            android:text="@string/error_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

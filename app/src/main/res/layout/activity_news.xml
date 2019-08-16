@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar"
+        android:orientation="horizontal">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_back_news"-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:src="@drawable/back"-->
+        <!--android:visibility="visible"/>-->
+
+        <RadioGroup
+            android:id="@+id/rg_tab_bar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/rg_tab_bar"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_youmin"
+                style="@style/top_tab_menu_item"
+                android:text="@string/youmin" />
+
+            <RadioButton
+                android:id="@+id/rb_SteamCN"
+                style="@style/top_tab_menu_item"
+                android:text="@string/SteamCN" />
+
+            <RadioButton
+                android:id="@+id/rb_jihe"
+                style="@style/top_tab_menu_item"
+                android:text="@string/jihe" />
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/rb_shiguang"-->
+            <!--style="@style/top_tab_menu_item"-->
+            <!--android:text="@string/shiguang" />-->
+
+        </RadioGroup>
+
+        <com.example.gamesquery.EditTextWithDel
+            android:id="@+id/et_find_news"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="8"
+            android:background="@drawable/search_find_activity"
+            android:hint="@string/et_find"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/edit_find_text"
+            android:textCursorDrawable="@null"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_find_news"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/search"
+            android:visibility="visible" />
+        <!--android:layout_weight="0.7"-->
+        <TextView
+            android:id="@+id/tv_find_news"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+
+            android:text="取消"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+    <!--<RadioGroup-->
+    <!--android:id="@+id/rg_tab_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/rg_tab_bar"-->
+    <!--android:background="@color/bg_white"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_youmin"-->
+    <!--style="@style/top_tab_menu_item"-->
+    <!--android:text="@string/youmin" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_SteamCN"-->
+    <!--style="@style/top_tab_menu_item"-->
+    <!--android:text="@string/SteamCN" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_jihe"-->
+    <!--style="@style/top_tab_menu_item"-->
+    <!--android:text="@string/jihe" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_shiguang"-->
+    <!--style="@style/top_tab_menu_item"-->
+    <!--android:text="@string/shiguang" />-->
+
+    <!--</RadioGroup>-->
+
+    <ImageView
+        android:id="@+id/iv_cursor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iv_cursor"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:scaleType="matrix"
+        android:src="@mipmap/red" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividing_line"
+        android:background="@color/lightGrey" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+
+</LinearLayout>
