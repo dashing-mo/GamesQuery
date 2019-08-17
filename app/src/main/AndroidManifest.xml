@@ -19,7 +19,7 @@
             android:windowSoftInputMode="adjustPan|stateHidden">
 
         </activity>
-        <activity android:name=".activity.NavigationActivity">
+        <activity android:name=".activity.GuideActivity">
 
         </activity>
         <activity android:name=".activity.LaunchActivity">
@@ -53,6 +53,7 @@
         <activity
             android:name=".activity.BaseWebActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".activity.AboutActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

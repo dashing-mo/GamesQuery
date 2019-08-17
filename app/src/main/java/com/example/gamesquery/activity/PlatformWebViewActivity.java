@@ -12,6 +12,9 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.gamesquery.R;
 
+/**
+ * APP游戏平台查看界面
+ */
 public class PlatformWebViewActivity extends BaseWebActivity {
     private ImageView iv_back;
     private ImageView iv_close;

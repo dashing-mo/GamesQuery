@@ -12,6 +12,9 @@ import com.example.gamesquery.bean.PlatformBean;
 
 import java.util.LinkedList;
 
+/**
+ * 自定义ListView适配器
+ */
 public class ListViewAdapter extends BaseAdapter {
     private LinkedList<PlatformBean> linkedList;
     private Context context;

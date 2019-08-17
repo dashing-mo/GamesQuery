@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.gamesquery.StatusBarUtil;
 
+/**
+ * Activity基类
+ */
 public class BaseActivity extends AppCompatActivity {
     private SharedPreferences preferences;
 

@@ -35,6 +35,9 @@ import com.example.gamesquery.R;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Activity的WebView基类
+ */
 public class BaseWebActivity extends BaseActivity {
     private FrameLayout fl;
     private List<String> urlList;

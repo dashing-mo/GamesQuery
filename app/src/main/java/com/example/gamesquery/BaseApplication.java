@@ -8,6 +8,9 @@ import android.webkit.WebViewClient;
 
 import org.xutils.x;
 
+/**
+ * 自定义Application
+ */
 public class BaseApplication extends Application {
     public MyWebView wv1;
     public static final String URI1 = "https://wap.gamersky.com";

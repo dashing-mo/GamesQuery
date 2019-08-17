@@ -24,7 +24,7 @@ import java.util.List;
  * @ 描述: App引导页
  * @ 作者: 李琪
  */
-public class NavigationActivity extends AppCompatActivity {
+public class GuideActivity extends AppCompatActivity {
     private List<View> list;
     private List<ImageView> mDotViews;
 
@@ -92,7 +92,7 @@ public class NavigationActivity extends AppCompatActivity {
                 btn_Go.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(NavigationActivity.this, MainActivity.class);
+                        Intent intent = new Intent(GuideActivity.this, MainActivity.class);
                         startActivity(intent);
                         finish();
                     }

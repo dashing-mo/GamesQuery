@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tl_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar"
+        app:navigationIcon="@drawable/back"
+        app:title="关于"
+        app:titleTextColor="@color/TEXT_ICONS" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1.5"
+        android:text="该APP的制作初衷是用于熟练Android开发的基本流程及各种控件的使用，因制作时间有限，部分功能未完成开发，但却已初具规模。该APP服务器由个人完全独立开发，Android客户端部分代码参考自网络上大神的源码。本APP所有源码已完全公开，欢迎大家借鉴学习，共同进步。"
+        android:textColor="@color/TEXT_ICONS"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:gravity="center"
+        android:text="APP源码地址："
+        android:textColor="@color/TEXT_ICONS"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:gravity="center"
+        android:text="https://github.com/dashing-mo/GamesQuery.git"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="作者：李琪\n联系方式：2544720770（QQ）"
+        android:textColor="@color/TEXT_ICONS"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>

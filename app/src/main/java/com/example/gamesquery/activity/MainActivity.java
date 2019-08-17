@@ -616,7 +616,7 @@ public class MainActivity extends TabActivity implements NavigationView.OnNaviga
                 startActivity(new Intent(MainActivity.this, SettingsActivity.class));
                 break;
             case R.id.nav_about:
-                Toast.makeText(this, "敬请期待", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, AboutActivity.class));
                 break;
             case R.id.nav_night:
                 Toast.makeText(this, "敬请期待", Toast.LENGTH_SHORT).show();

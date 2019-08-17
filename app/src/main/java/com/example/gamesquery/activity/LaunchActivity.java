@@ -79,7 +79,7 @@ public class LaunchActivity extends AppCompatActivity {
                     SharedPreferences navigationstatus = getSharedPreferences("content", MODE_PRIVATE);
                     if (navigationstatus.getBoolean("first", true)) {
                         navigationstatus.edit().putBoolean("first", false).commit();
-                        Intent intent = new Intent(getApplicationContext(), NavigationActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), GuideActivity.class);
                         startActivity(intent);
                         LaunchActivity.this.finish();
                     } else {
@@ -338,7 +338,7 @@ public class LaunchActivity extends AppCompatActivity {
         SharedPreferences navigationstatus = getSharedPreferences("content", MODE_PRIVATE);
         if (navigationstatus.getBoolean("first", true)) {
             navigationstatus.edit().putBoolean("first", false).commit();
-            Intent intent = new Intent(getApplicationContext(), NavigationActivity.class);
+            Intent intent = new Intent(getApplicationContext(), GuideActivity.class);
             startActivity(intent);
             LaunchActivity.this.finish();
         } else {

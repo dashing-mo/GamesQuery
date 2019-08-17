@@ -6,6 +6,9 @@ import android.view.Gravity;
 import android.view.Window;
 import android.view.WindowManager;
 
+/**
+ * 自定义Dialog
+ */
 public class CustomDialog extends Dialog {
     public CustomDialog(Context context, int layout, int style) {
         this(context, WindowManager.LayoutParams.MATCH_PARENT,

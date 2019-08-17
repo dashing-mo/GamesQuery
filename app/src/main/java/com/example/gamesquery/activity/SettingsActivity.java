@@ -112,22 +112,9 @@ public class SettingsActivity extends BaseActivity implements View.OnClickListen
                 Log.i("Switch按钮", "");
                 if (compoundButton.isChecked()) {
                     preferences.edit().putString("fullscreen", "open").putBoolean("flag", true).commit();
-//                    localBroadcastManager = LocalBroadcastManager.getInstance(SettingsActivity.this);
-//                    localOpenBcReceiver = new MainActivity().new LocalOpenBcReceiver();
-//                    filter = new IntentFilter();
-//                    filter.addAction("com.example.gamesquery.FULLSCREEN_OPEN");
-//                    localBroadcastManager.registerReceiver(localOpenBcReceiver, filter);
-//                    Intent intent = new Intent("com.example.gamesquery.FULLSCREEN_OPEN");
-//                    localBroadcastManager.sendBroadcast(intent);
+
                 } else {
                     preferences.edit().putString("fullscreen", "close").putBoolean("flag", false).commit();
-//                    onRefresh();
-//                    localCloseBcReceiver = new MainActivity().new LocalCloseBcReceiver();
-//                    filter = new IntentFilter();
-//                    filter.addAction("com.example.gamesquery.FULLSCREEN_CLOSE");
-//                    localBroadcastManager.registerReceiver(localCloseBcReceiver, filter);
-//                    Intent intent = new Intent("com.example.gamesquery.FULLSCREEN_CLOSE");
-//                    localBroadcastManager.sendBroadcast(intent);
                 }
             }
         });
