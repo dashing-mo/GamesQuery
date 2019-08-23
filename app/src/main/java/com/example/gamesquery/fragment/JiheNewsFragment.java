@@ -70,7 +70,7 @@ public class JiheNewsFragment extends BaseWebFragment {
 
     @Override
     public String getUrl() {
-        return "https://wap.gamersky.com";
+        return "https://www.gcores.com/";
     }
 
 
