@@ -1,8 +1,7 @@
 ## 游讯阁
 ### 项目概述  
-这是一款本人拿来 **练手** 的作品。  
-初始想法是做一款简单的游戏查询APP，
-结果做着做着刹不住车了，想法越来越多，功能也随着增多，就成了目前的集**游戏资讯浏览**，**游戏攻略查询**，**游戏价格搜索**，**游戏网站查看**等功能的一体式游戏服务APP，还大言不惭的起名为：**游讯阁**。
+该APP的制作初衷是用于熟练Android开发的基本流程及各种控件的使用，因制作时间有限，部分功能未完成开发，但却已初具规模。  
+目前的想法是做成一款游戏资讯聚合软件，使自己和大家能够更方便的来阅读兼具广度和深度的游戏文章。
 ### 功能需求设计  
 * APK新版本检测更新
 * 游戏资讯  
@@ -24,6 +23,7 @@
 * Android Studio 3.4.2
 * Microsoft Windows  Internet Information Services
 ### Android程序设计
+
 LaunchActivity  展示下Logo,还可以做一些耗时操作  
 MainActivity 主界面  
 NewsActivity 新闻资讯界面  
@@ -36,6 +36,10 @@ GuideActivity 引导页
 PlatformWebViewActivity 游戏平台查看界面  
 QuestionCardActivity 游戏问题卡界面  
 SettingsActivity 设置界面  
+AboutActivity 关于界面  
+
+关系图：  
+![主页](http://47.103.11.19/Images/游讯阁APP流程图.png)
 ### 主要涉及到的知识点
 1. 联网更新部分使用了xutils3框架
 2. Intent跳转，参数的传递
@@ -50,3 +54,4 @@ SettingsActivity 设置界面
 11. 自定义WebView
 12. listview数据填充及优化
 13. 自定义Toolbar
+14. 自定义SwipeRefreshLayout
